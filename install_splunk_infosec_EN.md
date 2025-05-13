@@ -186,23 +186,20 @@ Here are the steps to install the apps and then uncompress the dataset.
    - Ensure the apps are listed under **Apps**.
 
 ##### 4. **BOTS v3 Installation:**
-      - Download the BOTS v3 dataset:
-   
-      ```bash
-      wget https://botsdataset.s3.amazonaws.com/botsv3/botsv3_data_set.tgz
-      ```
+   Download the BOTS v3 dataset:
+   ```bash
+   wget https://botsdataset.s3.amazonaws.com/botsv3/botsv3_data_set.tgz
+   ```
 ##### 5. **Extract Files:**
-   - Unzip/untar the downloaded file into `$SPLUNK_HOME/etc/apps`:
-
-     ```bash
-     sudo tar -xvf botsv3_data_set.tgz -C /opt/splunk/etc/apps/
-     ```
+   Unzip/untar the downloaded file into `$SPLUNK_HOME/etc/apps`:
+   ```bash
+   sudo tar -xvf botsv3_data_set.tgz -C /opt/splunk/etc/apps/
+   ```
 ##### 6. **Assign Ownership:**
-   - Ensure the correct user has ownership of the directories and files used by Splunk:
-
-     ```bash
-     sudo chown -R splunkuser:splunkuser /opt/splunk
-     ```
+   Ensure the correct user has ownership of the directories and files used by Splunk:
+   ```bash
+   sudo chown -R splunkuser:splunkuser /opt/splunk
+   ```
 ##### 7. **Start Splunk:**
    ```bash
    /opt/splunk/bin/splunk start
