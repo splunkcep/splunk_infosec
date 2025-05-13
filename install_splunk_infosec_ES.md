@@ -1,68 +1,68 @@
 # Guía de Instalación de Splunk InfoSec
 
-Este documento proporciona una guía completa, paso a paso, para instalar **Splunk InfoSec**, basada en las mejores prácticas y recomendaciones oficiales de Splunk. Su objetivo es ayudar a los analistas de seguridad y arquitectos a implementar una solución InfoSec potente y escalable de manera eficiente.
+Este documento proporciona una guía completa, paso a paso, para instalar **Splunk InfoSec**, basada en las mejores prácticas y recomendaciones oficiales de Splunk. Su objetivo es ayudar a analistas de seguridad y arquitectos a implementar de manera eficiente una solución InfoSec potente y escalable.
 
 ---
 
 ## Tabla de Contenidos
 
-- [Visión General de Splunk InfoSec](#overview-of-splunk-infosec)
-   - [Características Clave](#key-features)
-   - [Beneficios](#benefits)
-   - [Quién Debería Implementar Splunk InfoSec](#who-should-deploy-splunk-infosec)
-   - [Sobre el Conjunto de Datos Boss of the SOC (BOTS) Versión 3](#about-boss-of-the-soc-bots-dataset-version-3)
-   - [Aplicaciones Prerrequisito](#prerequisite-apps)
-- [Requisitos del Sistema y Prerrequisitos](#system-requirements-and-prerequisites)
-- [Instalación de la Aplicación Splunk InfoSec y el Conjunto de Datos BOTS v3](#installing-the-splunk-infosec-app--bots-v3-dataset)
-- [Fin de la Guía](#end-of-guide)
+- [Visión general de Splunk InfoSec](#visión-general-de-splunk-infosec)
+   - [Características clave](#características-clave)
+   - [Beneficios](#beneficios)
+   - [Quién debería implementar Splunk InfoSec](#quién-debería-implementar-splunk-infosec)
+   - [Sobre el conjunto de datos Boss of the SOC (BOTS) Versión 3](#sobre-el-conjunto-de-datos-boss-of-the-soc-bots-versión-3)
+   - [Aplicaciones prerrequisito](#aplicaciones-prerrequisito)
+- [Requisitos del sistema y prerrequisitos](#requisitos-del-sistema-y-prerrequisitos)
+- [Instalación de la aplicación Splunk InfoSec y el conjunto de datos BOTS v3](#instalación-de-la-aplicación-splunk-infosec-y-el-conjunto-de-datos-bots-v3)
+- [Fin de la guía](#fin-de-la-guía)
 
 ---
 
-## Visión General de Splunk InfoSec
+## Visión general de Splunk InfoSec
 
-Splunk InfoSec es una solución de seguridad de vanguardia que aprovecha las capacidades de análisis de datos de Splunk para proporcionar información de seguridad integral y detección de amenazas en tiempo real. Es esencial para las organizaciones que buscan fortalecer su postura de ciberseguridad en el dinámico panorama de amenazas actual.
+Splunk InfoSec es una solución de seguridad de vanguardia que aprovecha las capacidades de análisis de datos de Splunk para proporcionar información de seguridad integral y detección de amenazas en tiempo real. Es esencial para organizaciones que buscan fortalecer su postura de ciberseguridad en el dinámico panorama de amenazas actual.
 
-### Características Clave
+### Características clave
 
-- **Monitoreo y Análisis en Tiempo Real**: Monitoreo continuo de flujos de datos para detección y respuesta a amenazas en tiempo real.
-- **Detección Avanzada de Amenazas**: Integración con Splunk Machine Learning Toolkit (MLTK) para correlación de amenazas basada en ML y alertas.
-- **Investigación de Incidentes y Forense**: Herramientas para investigación detallada y forense.
-- **Cumplimiento y Reportes**: Ayuda en el cumplimiento normativo con herramientas de reporte extensas.
+- **Monitoreo y análisis en tiempo real**: Monitoreo continuo de flujos de datos para detección y respuesta a amenazas en tiempo real.
+- **Detección avanzada de amenazas**: Integración con Splunk Machine Learning Toolkit (MLTK) para correlación de amenazas basada en ML y alertas.
+- **Investigación de incidentes y forense**: Herramientas para investigación detallada y forense.
+- **Cumplimiento y reportes**: Ayuda en el cumplimiento normativo con herramientas de reporte extensas.
 
 ### Beneficios
 
-- **Postura de Seguridad Mejorada**: Identificación proactiva de amenazas utilizando análisis avanzados.
-- **Operaciones Simplificadas**: Gestión centralizada de operaciones de seguridad.
-- **Escalabilidad y Flexibilidad**: Adecuado para organizaciones de todos los tamaños.
-- **Detección y Respuesta Rápida a Amenazas**: Minimizar daños mediante acción rápida.
-- **Inteligencia Operacional**: Obtener información estratégica y optimizar procesos de seguridad.
+- **Postura de seguridad mejorada**: Identificación proactiva de amenazas utilizando análisis avanzados.
+- **Operaciones simplificadas**: Gestión centralizada de operaciones de seguridad.
+- **Escalabilidad y flexibilidad**: Adecuado para organizaciones de todos los tamaños.
+- **Detección y respuesta rápida a amenazas**: Minimizar daños mediante acción rápida.
+- **Inteligencia operacional**: Obtener información estratégica y optimizar procesos de seguridad.
 
 ---
 
-### Quién Debería Implementar Splunk InfoSec
+### Quién debería implementar Splunk InfoSec
 
 Splunk InfoSec está diseñado para alinear **personas, procesos y herramientas**, ofreciendo:
 
-- **Eficiencia para Recursos Limitados**: Ideal para equipos de seguridad pequeños.
-- **Mejora de Habilidades**: Simplifica tareas complejas a través de interfaces intuitivas.
-- **Plataforma de Seguridad Integral**: Centraliza la detección de amenazas, respuesta y reporte.
-- **Integración y Personalización**: Se integra perfectamente con la infraestructura existente.
-- **Playbooks de Respuesta a Incidentes**: Ayuda en la creación y refinamiento de playbooks de IR.
-- **Flujos de Trabajo Automatizados**: Asegura manejo de incidentes repetible y documentado.
+- **Eficiencia para recursos limitados**: Ideal para equipos de seguridad pequeños.
+- **Mejora de habilidades**: Simplifica tareas complejas a través de interfaces intuitivas.
+- **Plataforma de seguridad integral**: Centraliza la detección de amenazas, respuesta y reporte.
+- **Integración y personalización**: Se integra perfectamente con la infraestructura existente.
+- **Playbooks de respuesta a incidentes**: Ayuda en la creación y refinamiento de playbooks de IR.
+- **Flujos de trabajo automatizados**: Asegura manejo de incidentes repetible y documentado.
 
 ---
 
-### Sobre el Conjunto de Datos Boss of the SOC (BOTS) Versión 3
+### Sobre el conjunto de datos Boss of the SOC (BOTS) Versión 3
 
 Un conjunto de datos de seguridad de muestra y plataforma CTF para profesionales de seguridad de la información, investigadores, estudiantes y entusiastas.
 
-#### Sobre las Aplicaciones Prerrequisito de BOTS v3
+#### Sobre las aplicaciones prerrequisito de BOTS v3
 
-El conjunto de datos requiere las siguientes aplicaciones que se distribuyen y licencian por separado y **deben instalarse antes de usar el conjunto de datos**. Estamos utilizando diferentes versiones de aplicaciones del uso originalmente previsto del conjunto de datos y algunas cosas pueden no funcionar correctamente, pero funcionará bien para propósitos de laboratorio. Más información sobre BOTS v3 se puede encontrar [aquí](https://github.com/splunk/botsv3).
+El conjunto de datos requiere las siguientes aplicaciones que se distribuyen y licencian por separado y **deben instalarse antes de usar el conjunto de datos**. Estamos utilizando diferentes versiones de aplicaciones respecto al uso originalmente previsto del conjunto de datos; algunas funcionalidades pueden no operar correctamente, pero funcionará adecuadamente para propósitos de laboratorio. Más información sobre BOTS v3 se puede encontrar [aquí](https://github.com/splunk/botsv3).
 
 ---
 
-### Aplicaciones Prerrequisito
+### Aplicaciones prerrequisito
 
 Antes de implementar Splunk InfoSec, instale las siguientes aplicaciones prerrequisito:
 
@@ -110,15 +110,15 @@ Antes de implementar el conjunto de datos BOTS v3, instale las siguientes aplica
 
 ---
 
-## Requisitos del Sistema y Prerrequisitos
+## Requisitos del sistema y prerrequisitos
 
-### Compatibilidad del Kernel de Linux
+### Compatibilidad del kernel de Linux
 
 - **General**: La mayoría de las distribuciones modernas de Linux son compatibles.
 - **Recomendado**: Siga los [Requisitos del SO de Splunk](https://docs.splunk.com/Documentation/Splunk/latest/Installation/Systemrequirements#Supported_Operating_Systems).
-- **Kernel Personalizado**: Puede requerir configuración adicional.
+- **Kernel personalizado**: Puede requerir configuración adicional.
 
-### Requisitos Mínimos de Hardware
+### Requisitos mínimos de hardware
 
 | Recurso | Requisitos Mínimos |
 |:---------|:----------------------|
@@ -127,7 +127,7 @@ Antes de implementar el conjunto de datos BOTS v3, instale las siguientes aplica
 | Almacenamiento | 500 GB de espacio en disco (SSD recomendado) |
 | Red | Red interna de 1 Gbps |
 
-### Dependencias de Software Requeridas
+### Dependencias de software requeridas
 
 - **Sistema Operativo**: Linux actualizado (Ubuntu, CentOS, RHEL).
 - **Java Runtime Environment**: JRE 8 o posterior (para funcionalidades específicas).
@@ -135,7 +135,7 @@ Antes de implementar el conjunto de datos BOTS v3, instale las siguientes aplica
 
 > **Nota**: Abra los puertos necesarios siguiendo las pautas y mejores prácticas de Splunk.
 
-### Recomendaciones Adicionales
+### Recomendaciones adicionales
 
 - Escale el hardware para despliegues más grandes.
 - Implemente firewall e IDS.
@@ -143,7 +143,7 @@ Antes de implementar el conjunto de datos BOTS v3, instale las siguientes aplica
 
 ---
 
-## Instalación de la Aplicación Splunk InfoSec y el Conjunto de Datos BOTS v3
+## Instalación de la aplicación Splunk InfoSec y el conjunto de datos BOTS v3
 
 ### Prerrequisitos
 
@@ -162,27 +162,26 @@ Si Splunk no está en funcionamiento, inícielo usando:
 /opt/splunk/bin/splunk start
 ```
 
-### Instalación Paso a Paso
-   - [Instalar vía Splunk Web](#method-1-install-via-splunk-web)
-   - [Instalar vía CLI](#method-2-install-via-command-line)
-> Salte a este [paso](#4-extract-files) si está utilizando el entorno TD SYNNEX para este laboratorio 
+### Instalación paso a paso
+   - [Instalar vía Splunk Web](#método-1-instalar-vía-splunk-web)
+   - [Instalar vía CLI](#método-2-instalar-vía-línea-de-comandos)
+> Salte a este [paso](#4-extraer-archivos) si está utilizando el entorno TD SYNNEX para este laboratorio 
 
 #### **Método 1: Instalar vía Splunk Web**
 
-Aunque es posible instalar las aplicaciones vía Splunk Web, todavía es necesario descomprimir/desempaquetar el conjunto de datos BOTS utilizando la interfaz de línea de comandos.
-Aquí están los pasos para instalar las aplicaciones y luego descomprimir el conjunto de datos.
+Aunque es posible instalar las aplicaciones vía Splunk Web, todavía es necesario descomprimir/desempaquetar el conjunto de datos BOTS utilizando la interfaz de línea de comandos. Aquí están los pasos para instalar las aplicaciones y luego descomprimir el conjunto de datos.
 
 ##### 1. **Acceder a Splunkbase:**
    - Visite [Splunkbase](https://splunkbase.splunk.com).
    - Busque "Splunk InfoSec App" y descárguelo junto con todas las aplicaciones prerrequisito.
 
-##### 2. **Subir la Aplicación a Splunk:**
+##### 2. **Subir la aplicación a Splunk:**
    - Inicie sesión en su interfaz web de Splunk.
    - Navegue a **Apps** > **Manage Apps**.
    - Haga clic en **Install app from file**.
    - Seleccione el paquete de la aplicación descargada y haga clic en **Upload**.
 
-##### 3. **Verificar Instalación:**
+##### 3. **Verificar instalación:**
    - Asegúrese de que las aplicaciones estén listadas bajo **Apps**.
 
 ##### 4. **Instalación de BOTS v3:**
@@ -190,12 +189,12 @@ Aquí están los pasos para instalar las aplicaciones y luego descomprimir el co
    ```bash
    wget https://botsdataset.s3.amazonaws.com/botsv3/botsv3_data_set.tgz
    ```
-##### 5. **Extraer Archivos:**
+##### 5. **Extraer archivos:**
    Descomprima/desempaquete el archivo descargado en `$SPLUNK_HOME/etc/apps`:
    ```bash
    sudo tar -xvf botsv3_data_set.tgz -C /opt/splunk/etc/apps/
    ```
-##### 6. **Asignar Propiedad:**
+##### 6. **Asignar propiedad:**
    Asegúrese de que el usuario correcto tenga la propiedad de los directorios y archivos utilizados por Splunk:
    ```bash
    sudo chown -R splunkuser:splunkuser /opt/splunk
@@ -212,7 +211,7 @@ Aquí están los pasos para instalar las aplicaciones y luego descomprimir el co
    /opt/splunk/bin/splunk stop
    ```
 
-##### 2. **Descargar y Extraer Aplicaciones:**
+##### 2. **Descargar y extraer aplicaciones:**
    Cree un directorio de descargas:
    ```bash
    sudo mkdir /opt/downloads
@@ -228,19 +227,19 @@ Aquí están los pasos para instalar las aplicaciones y luego descomprimir el co
    cd /opt/downloads/botsv3_&_infosec_apps/
    ```
 
-##### 3. **Descargar Conjunto de Datos BOTS v3:**
+##### 3. **Descargar conjunto de datos BOTS v3:**
    ```bash
    wget https://botsdataset.s3.amazonaws.com/botsv3/botsv3_data_set.tgz
    ```
 
-##### 4. **Extraer Archivos:**
+##### 4. **Extraer archivos:**
    ```bash
    for file in *.tgz; do
        tar -xf "$file" -C /opt/splunk/etc/apps/
    done
    ```
 
-##### 5. **Asignar Propiedad:**
+##### 5. **Asignar propiedad:**
    ```bash
    sudo chown -R splunkuser:splunkuser /opt/splunk
    ```
@@ -252,7 +251,7 @@ Aquí están los pasos para instalar las aplicaciones y luego descomprimir el co
 
 #### Uso del conjunto de datos y configuración de InfoSec
 
-##### 1. **Verificar Importación de Datos:**
+##### 1. **Verificar importación de datos:**
    Abra Splunk Web y busque el conjunto de datos usando:
      ```
      index=botsv3 earliest=0
@@ -286,4 +285,4 @@ Aquí están los pasos para instalar las aplicaciones y luego descomprimir el co
 
 ---
 
-## Fin de la Guía
+## Fin de la guía
