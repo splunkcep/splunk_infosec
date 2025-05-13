@@ -7,11 +7,11 @@ This document provides a comprehensive, step-by-step guide for installing **Splu
 ## Table of Contents
 
 - [Overview of Splunk InfoSec](#overview-of-splunk-infosec)
-  - [Key Features](#key-features)
-  - [Benefits](#benefits)
-- [Who Should Deploy Splunk InfoSec](#who-should-deploy-splunk-infosec)
-- [About Boss of the SOC (BOTS) Dataset Version 3](#about-boss-of-the-soc-bots-dataset-version-3)
-- [Prerequisite Apps](#prerequisite-apps)
+   - [Key Features](#key-features)
+   - [Benefits](#benefits)
+   - [Who Should Deploy Splunk InfoSec](#who-should-deploy-splunk-infosec)
+   - [About Boss of the SOC (BOTS) Dataset Version 3](#about-boss-of-the-soc-bots-dataset-version-3)
+   - [Prerequisite Apps](#prerequisite-apps)
 - [System Requirements and Prerequisites](#system-requirements-and-prerequisites)
 - [Installing the Splunk InfoSec App & BOTS v3 Dataset](#installing-the-splunk-infosec-app--bots-v3-dataset)
 - [End of Guide](#end-of-guide)
@@ -39,7 +39,7 @@ Splunk InfoSec is a cutting-edge security solution that leverages Splunk's data 
 
 ---
 
-## Who Should Deploy Splunk InfoSec
+### Who Should Deploy Splunk InfoSec
 
 Splunk InfoSec is designed to align **people, processes, and tools**, offering:
 
@@ -52,17 +52,17 @@ Splunk InfoSec is designed to align **people, processes, and tools**, offering:
 
 ---
 
-## About Boss of the SOC (BOTS) Dataset Version 3
+### About Boss of the SOC (BOTS) Dataset Version 3
 
 A sample security dataset and CTF platform for information security professionals, researchers, students, and enthusiasts.
 
-### About BOTS v3 Prerequisite Apps
+#### About BOTS v3 Prerequisite Apps
 
 The dataset requires the following apps which are distributed and licensed separately and **should be installed before using the dataset**. We are using different app versions from the originally intended use of the dataset and some things may not work properly, but it will work fine for lab purposes. More information about BOTS v3 can be found [here](https://github.com/splunk/botsv3).
 
 ---
 
-## Prerequisite Apps
+### Prerequisite Apps
 
 Before deploying Splunk InfoSec, install the following prerequisite apps:
 
@@ -167,7 +167,7 @@ If Splunk is not running, start it using:
    - [Install via CLI](#method-2-install-via-command-line)
 > Jump to this [step](#4-extract-files) if you are using the TD SYNNEX environment for this lab 
 
-#### Method 1: Install via Splunk Web
+#### **Method 1: Install via Splunk Web**
 
 Even though it is possible to install the Apps via Splunk Web, it is still necessary to unzip/untar the BOTS dataset using the command line interface.
 Here are the steps to install the apps and then uncompress the dataset.
@@ -205,7 +205,7 @@ Here are the steps to install the apps and then uncompress the dataset.
    /opt/splunk/bin/splunk start
    ```
 
-#### Method 2: Install via Command Line
+#### **Method 2: Install via Command Line**
 
 ##### 1. **Stop Splunk:**
    ```bash
