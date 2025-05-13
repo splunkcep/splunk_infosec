@@ -1,0 +1,2 @@
+- [Splunk InfoSec Installation Guide (English)](install_splunk_infosec_EN.md)
+- [Guía de Instalación de Splunk InfoSec (Español)](install_splunk_infosec_ES.md)
