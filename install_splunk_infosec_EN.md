@@ -163,10 +163,14 @@ If Splunk is not running, start it using:
 ```
 
 ### Step-by-Step Installation
-
-> If you are using the TD SYNNEX environment for this lab, jump to [here](#)
+   - [Install via Splunk Web](#method-1-install-via-splunk-web)
+   - [Install via CLI](#method-2-install-via-command-line)
+> Jump to this [step](#4-extract-files) if you are using the TD SYNNEX environment for this lab 
 
 #### Method 1: Install via Splunk Web
+
+Even though it is possible to install the Apps via Splunk Web, it is still necessary to unzip/untar the BOTS dataset using the command line interface.
+Here are the steps to install the apps and then uncompress the dataset.
 
 ##### 1. **Access Splunkbase:**
    - Visit [Splunkbase](https://splunkbase.splunk.com).
